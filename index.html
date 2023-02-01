@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEAUTIFUL GALLERY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="conatainer">
+        <div style="color: rgb(255, 255, 255);font-family:  Calibri, 'Trebuchet MS', sans-serif;background-color: black; width: 90%;border-radius: 5px; padding: 3px;text-align: center;"><h1>BEAUTIFUL GALLERY</h1> </div>
+        <div class="row1">
+            <button class="divImg1 res">
+                
+                    <img src="/signup.jpg" alt="" height="200px" width="200px" class="image">
+                    <div class="middle">
+                        <div class="text"><h4>Registration</h4></div>
+                    </div>
+                
+            </button>
+            <button class="divImg2 res">
+                
+                    <img src="/data.jpg" alt="" height="200px" width="200px">
+                    <div class="middle">
+                        <div class="text"><h4>Display Data</h4></div>
+                    </div>
+                
+            </button>
+            <button class="divImg3 res">
+                
+                    <img src="/dice.jpg" alt=""height="200px" width="200px">
+                    <div class="middle">
+                        <div class="text"><h4>Play Dice Game</h4></div>
+                    </div>
+                
+            </button>
+            <button class="divImg4 res">
+                
+                    <img src="/random.png" alt="" height="200px" width="200px">
+                    <div class="middle">
+                        <div class="text"><h4>Genarate Token</h4></div>
+                    </div>
+                
+            </button>
+        </div>
+
+
+
+        <div class="row2">
+
+            
+            <div class="divSignup hide">
+                <form class="signup  form">
+                    <h2>Register Form</h2><br><hr><br>
+                        <p id='error'></p> <br>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required> <br>
+            
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your Email" required><br>
+            
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" placeholder="Enter your Username" required><br>
+            
+                        <input type="submit" class="signup" id='submit'>
+                </form>
+            </div>
+
+
+
+
+            <div class="divData hide">
+                <h2 style="background-color: crimson; width: 100%; color: white; padding: 3px 2px " >WELCOME</h2> 
+                <div class="dataBackground">
+                    <br>
+                    <h4 style="color: crimson;"><u>NAME</u></h4>
+                    <p id="nameData"></p><br>
+                    <h4 style="color: crimson;"><u>USERNAME</u></h4>
+                    <p id="usernameData"></p>
+                </div>
+            </div> 
+
+
+
+
+            <div class="divDice hide">
+                <div class="sum">
+                    <h1><u>TOTAL SCORE</u></h1>
+                    <div class="sumTotal"></div>
+                </div>
+                <div class="diceImage">
+                    <img src="/images/dice0.jpg" alt="dice1" id="check1">
+                </div>
+                <div class="bad hide">
+                    <img src="/panda-bad-luck.gif" alt="" height="200" width="400" >
+                </div>
+            </div>
+
+
+
+
+            <div class="divToken hide">
+                <div class="good hide">
+                    <h4 class="token" style="text-align: center; background-color: red; color: white; padding: 5px;">Your Token Number <span id="token" style="background-color: rgb(229, 255, 0);padding: 3px;color: rgb(0, 0, 0); border-radius: 3px;"></span></h4> <br>
+                    <img src="/congrats-9.gif" alt="" height="250" width="400">
+                </div>
+                <!-- <div class="bad hide">
+                    <img src="/panda-bad-luck.gif" alt="" height="250" width="400">
+                </div> -->
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+    <script src="/script.js"></script>
+</body>
+</html>
